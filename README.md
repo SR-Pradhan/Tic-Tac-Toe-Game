@@ -1,34 +1,45 @@
-# ---------- Tic Tac Toe ----------
+# 🎮 Tic-Tac-Toe-Game
 
-<b>Tic-tac-toe</b> is a two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row first is the winner. It is a solved game, with a forced draw assuming best play from both players.
+**Tic-Tac-Toe** is a classic two-player game played on a 3x3 grid. Players take turns marking the cells with ❌ or ⭕, and the first player to align three of their marks horizontally, vertically, or diagonally wins the game!
 
+---
 
-# Gameplay
-Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid.
+## 🕹️ Gameplay
 
-There is no universally agreed rule as to who plays first, but in this article the convention that X plays first is used.
+- The game is played on a 3x3 grid.
+- Two players take alternate turns placing either ❌ (Player 1) or ⭕ (Player 2).
+- The player who manages to place three of their marks in a straight line (horizontal, vertical, or diagonal) wins.
+- If the grid is filled and no one has won, it's a draw 🤝.
 
+> 🎲 Conventionally, ❌ starts the game.
 
-# Combinatorics
-When considering only the state of the board, and after taking into account board symmetries (i.e. rotations and reflections), there are only 138 terminal board positions. A combinatorics study of the game shows that when "X" makes the first move every time, the game outcomes are as follows:
-- 91 distinct positions are won by (X).
-- 44 distinct positions are won by (O).
-- 3 distinct positions are drawn.
+---
 
+## 🧮 Combinatorics
 
-# Strategy
-A player can play a perfect game of tic-tac-toe (to win or at least draw) if, each time it is their turn to play, they choose the first available move from the following list, as used in Newell and Simon's 1972 tic-tac-toe program.
+Considering only unique board configurations and eliminating symmetrical duplications (rotations/reflections), here are the endgame stats:
 
-1. Win: If the player has two in a row, they can place a third to get three in a row.
-2. Block: If the opponent has two in a row, the player must play the third themselves to block the opponent.
-3. Fork: Cause a scenario where the player has two ways to win (two non-blocked lines of 2).
-4. Blocking an opponent's fork: If there is only one possible fork for the opponent, the player should block it. Otherwise, the player should block all forks in any way that simultaneously allows them to make two in a row. Otherwise, the player should make a two in a row to force the opponent into defending, as long as it does not result in them producing a fork. For example, if "X" has two opposite corners and "O" has the center, "O" must not play a corner move to win. (Playing a corner move in this scenario produces a fork for "X" to win.)
-5. Center: A player marks the center. (If it is the first move of the game, playing a corner move gives the second player more opportunities to make a mistake and may therefore be the better choice; however, it makes no difference between perfect players.)
-6. Opposite corner: If the opponent is in the corner, the player plays the opposite corner.
-7. Empty corner: The player plays in a corner square.
-8. Empty side: The player plays in a middle square on any of the four sides.
+- ✅ 91 unique wins for Player ❌
+- ✅ 44 unique wins for Player ⭕
+- 🤝 3 unique draw positions
 
+> Tic-tac-toe is a *solved game*, meaning perfect play by both results in a draw.
 
-# Connect with Me
-- LinkedIn: www.linkedin.com/in/karanroshan
-- Email: karanroshan91@gmail.com
+---
+
+## 🧠 Strategy Guide (Play Like a Pro)
+
+To play a perfect game, follow these strategic steps:
+
+1. 🏆 **Win**: If you can win in one move, do it.
+2. 🛡️ **Block**: If the opponent can win in one move, block them.
+3. 🍴 **Fork**: Create two chances to win (two non-blocked lines of 2).
+4. 🔐 **Block Opponent's Fork**: Block a fork or create pressure to prevent it.
+5. 🎯 **Center**: Take the center if available.
+6. 🔁 **Opposite Corner**: If the opponent is in a corner, play the opposite.
+7. ⛳ **Empty Corner**: Choose any free corner.
+8. 📐 **Empty Side**: If nothing else, pick a free side.
+
+---
+
+> ✨ Feel free to clone, customize, and enhance this game! Contributions are welcome.
